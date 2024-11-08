@@ -1,8 +1,7 @@
 ---
 interface Props {
 	title: string;
-}
-
+}import { Icon } from 'astro-icon/components';
 const { title } = Astro.props;
 ---
 
@@ -24,6 +23,7 @@ const { title } = Astro.props;
 			<li><a href="/organigrama" class="block px-2 hover:bg-white/25">Organigrama</a></li>
 			<li><a href="/noticias" class="block px-2 hover:bg-white/25">Noticias</a></li>
 			<li><a href="/contacto" class="block px-2 hover:bg-white/25">Conctacto</a></li>
+			<Icon name="mdi:elephant" size="100" class="text-blue-600"/>
 		</menu>
 
 		<slot/>
